@@ -8,7 +8,7 @@ front_host = env("front_host")
 
 DEBUG = False
 
-ALLOWED_HOSTS = [f"{host_name}"]
+ALLOWED_HOSTS = ['*']
 
 DATABASES = {}
 
