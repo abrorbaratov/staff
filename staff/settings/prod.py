@@ -17,14 +17,12 @@ DATABASES["default"] = dj_database_url.parse(env("DATABASE_URL"))
 CORS_ALLOWED_ORIGINS = [
     "http://localhost",
     "http://127.0.0.1",
-    "http://0.0.0.0:8080",
-    "http://0.0.0.0",
-    f"https://{front_host}",
-    f"https://{host_name}",
+    f"{front_host}",
+    f"{host_name}",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:8000",
-    "http://127.0.0.1:8000",
+    "http://localhost",
+    "http://127.0.0.1",
     f"{host_name}",
 ]
